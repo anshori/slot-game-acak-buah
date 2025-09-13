@@ -1,0 +1,102 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f0f0f0;
+	font-family: Arial, sans-serif;
+	overflow: hidden;
+	/* Mencegah scrollbar dari konfeti */
+}
+
+#game-container {
+	text-align: center;
+	background-color: white;
+	padding: 40px;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	z-index: 10;
+	/* Memastikan game di atas konfeti */
+	position: relative;
+}
+
+#slot-machine {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+.slot {
+	width: 100px;
+	height: 100px;
+	border: 2px solid #333;
+	margin: 0 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+#play-button {
+	width: 80px;
+	height: 80px;
+	background-color: red;
+	border: none;
+	border-radius: 50%;
+	/* Membuat tombol menjadi lingkaran */
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.1s;
+	margin-top: 20px;
+}
+
+#play-button:hover {
+	filter: brightness(90%);
+}
+
+#play-button:active {
+	transform: scale(0.95);
+}
+
+#result {
+	margin-top: 20px;
+	font-size: 32px;
+	font-weight: bold;
+	color: green;
+	height: 40px;
+	/* Memberi ruang agar layout tidak bergeser */
+}
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: rgb(193, 193, 193);
+	text-align: center;
+	padding: 10px;
+}
+
+
+/* Efek Konfeti */
+.confetti {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: #f00;
+	/* Warna akan di-override oleh JS */
+	top: -20px;
+	/* Mulai dari atas layar */
+	opacity: 1;
+	animation: fall linear forwards;
+}
+
+@keyframes fall {
+	to {
+		transform: translateY(105vh) rotate(360deg);
+		opacity: 0;
+	}
+}
