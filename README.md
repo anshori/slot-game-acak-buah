@@ -9,5 +9,9 @@ Slot Game Acak Buah adalah sebuah simulasi aplikasi permainan slot sederhana yan
 
 ![Gambar 2](screenshot2.png)
 
+
+## Demo
+[https://anshori.github.io/slot-game-acak-buah](https://anshori.github.io/slot-game-acak-buah)
+
 ---    
 > unsorry@2025
