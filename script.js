@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			clearInterval(confettiInterval);
 			removeConfetti();
 			resultDisplay.textContent = '';
-			playButton.textContent = 'Play';
+			playButton.textContent = 'Acak';
 			playButton.style.backgroundColor = 'red';
 			isWon = false;
 			return;
